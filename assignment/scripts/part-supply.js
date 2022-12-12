@@ -12,7 +12,7 @@ let supplyChanges = [3, 5, -6, 0, 7, 11];
 console.log('2. Array of supplyChanges:', supplyChanges);
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
-console.log('3. Second supplyChange is:');
+console.log('3. Second supplyChange is:', supplyChanges[1]);
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges' 
 //    array & console.log the value removed.
