@@ -4,7 +4,8 @@
   "description": "This week, we will continue to put more into your tool belt by tackling methods for handling tasks multiple times, storing multiple pieces of information, and more advanced decision tools.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node assignment/scripts/part-supply.js"
   },
   "repository": {
     "type": "git",
