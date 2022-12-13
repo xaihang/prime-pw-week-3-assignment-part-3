@@ -84,7 +84,7 @@ let parts = 572;
 const boxHolds = 7;
 let box = 0;
 
-while (parts > boxHolds) {
+while (parts >= boxHolds) {
   parts -= boxHolds;
   box++;
 }
