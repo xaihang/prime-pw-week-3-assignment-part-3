@@ -69,7 +69,7 @@ for (let i = 0; i < supplyChanges.length; i++) {
 console.log('8. Total supplies available is:', partsAvail);
 
 // What is considered the parts available? Is it the supplyChanges or the partsNeeded?
-//Right now I am assuming it is the supplyChanges; and leaving out partsNeeded. 
+//Right now I am assuming it is the supplyChanges; and leaving out partsNeeded.
 
 // 9. We have a large stash of parts in our warehouse that we
 //    need to box up and get ready for shipment.
@@ -77,4 +77,17 @@ console.log('8. Total supplies available is:', partsAvail);
 //    Use a `while` loop to keep adding parts to boxes until
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
+
 console.log('9. Filling boxes with a "while" loop');
+
+let parts = 572;
+const boxHolds = 7;
+let box = 0;
+
+while (parts > boxHolds) {
+  parts -= boxHolds;
+  box++;
+}
+
+console.log('Boxes that were filled:', box);
+console.log('Parts that are left over:', parts);
