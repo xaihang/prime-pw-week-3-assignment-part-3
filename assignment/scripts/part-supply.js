@@ -47,26 +47,29 @@ for (let i = 0; i < supplyChanges.length; i++) {
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
-for (const supply of supplyChanges) {
-    if (supply > 0) {
-        console.log(`Added ${supply} parts.`);
-      } else if (supply === 0) {
-        console.log('No change.');
-      } else {
-        console.log(`Removed ${supply} parts.`);
-      }
-}
-
-
-
 
 console.log('7. Showing supplyChanges with "for of" loop');
- 
 
+for (const supply of supplyChanges) {
+  if (supply > 0) {
+    console.log(`Added ${supply} parts.`);
+  } else if (supply === 0) {
+    console.log('No change.');
+  } else {
+    console.log(`Removed ${supply} parts.`);
+  }
+}
 
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
-console.log('8. Total supplies available is:');
+let partsAvail = 0;
+for (let i = 0; i < supplyChanges.length; i++) {
+  partsAvail += supplyChanges[i];
+}
+console.log('8. Total supplies available is:', partsAvail);
+
+// What is considered the parts available? Is it the supplyChanges or the partsNeeded?
+//Right now I am assuming it is the supplyChanges; and leaving out partsNeeded. 
 
 // 9. We have a large stash of parts in our warehouse that we
 //    need to box up and get ready for shipment.
